@@ -1,0 +1,51 @@
+body {
+  background-size: cover;
+  font-family: monospace;
+  padding: 1rem;
+  background-image: url('./background.jpg');
+}
+
+section {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 70%;
+  min-height: 50%;
+  transform: translate(-50%, -50%);
+
+  padding: 1rem;
+
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#container {
+  flex-grow: 1;
+  padding: 1rem;
+}
+
+section > h1, section > button {
+  flex-shrink: 0;
+  height: 3rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h3, em {
+  font-size: 1.5rem;
+}
+
+button {
+  font-size: 2rem;
+  font-family: monospace;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}
